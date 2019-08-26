@@ -169,9 +169,6 @@ class Main(QMainWindow, Ui_MainWindow):
     
     @pyqtSlot()
     def selectDownPath(self):
-        # fname = QFileDialog.getOpenFileName(self)
-        # self.pathTextEdit.setText(fname[0])
-
         fpath = QFileDialog.getExistingDirectory(self, 'Select directory')
         self.pathTextEdit.setText(fpath)
 
@@ -206,7 +203,6 @@ class Main(QMainWindow, Ui_MainWindow):
 
     # define callback function of the downloading progress
     def youtubeDownProgress(self, stream, chunk, file_handle, bytes_remaining):
-        # print('progress : ', int(((self.stream_size - bytes_remaining) / self.stream_size) * 100))
         self.saveProgressBar.setValue(int(((self.stream_size - bytes_remaining) / self.stream_size) * 100))
 
 
