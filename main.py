@@ -101,7 +101,7 @@ class Main(QMainWindow, Ui_MainWindow):
 
     
     def dbConnect(self):
-        dbconn = pymysql.connect(host = 'localhost', user = 'jihoahn', password = 'D6e72n9y!!', db = 'user_log', charset = 'utf8')
+        dbconn = pymysql.connect(host = 'localhost', user = 'your_name', password = 'your_pwd', db = 'your_db', charset = 'utf8')
         return dbconn
 
    
