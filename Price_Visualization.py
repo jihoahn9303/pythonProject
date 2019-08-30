@@ -67,7 +67,7 @@ class Price_Visualize():
         # print(oil_price_bottom10)
 
         # google geocoding API 활성화
-        gmap_key = 'AIzaSyBHUzHQ4wc5pZ00E-4SXEbtV0mwfnergPY'
+        gmap_key = 'Input your google geocoding API key.'
         gmaps = googlemaps.Client(key = gmap_key)
 
         # google geocoding API를 이용해 각 주유소의 위도 및 경도 값 저장
